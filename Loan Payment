@@ -31,13 +31,15 @@ Logic
 5)EMI = TotalAmount/TenureInMonths
 6)Display the above data
 
-create proc LoanStatement
-(
-  @LoanAmount money = 100000,
-  @ROI        tinyint = 14,
-  @TenureInYrs tinyint = 2
-)
-as begin
---Declare a variable for Loan Date
+Create Database Members #Create Members database
 
+CREATE Procedure GetAllMembers  #Create new stored procedure
+AS
+SELECT * TableMembers  #Select all members from table of members
 
+CREATE Procedure [Members].[UpdateMember] #Modify Firstname
+@Firstname varchar(50)  #Set Firstname to character with length of 50
+AS
+UPDATE TableMembers  
+SET Firstname = @Firstname #Redeclare Firstname via user defined format
+WHERE Firstname = 'Frank'
