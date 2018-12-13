@@ -2,7 +2,7 @@
 
 CREATE Database Members #Create Members database
 
-CREATE Procedure GetAllMembers  #Create new procedure
+CREATE Procedure GetAllMembers  #Create new stored procedure
 AS
 SELECT * TableMembers  #Select all members from table of members
 
