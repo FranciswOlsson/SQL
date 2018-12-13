@@ -1,0 +1,32 @@
+Requirement:
+---------------------
+Create a sp for Loan Statement
+
+Inputs:
+---------------------
+LoanAmount
+Rate Of Interest
+Tenure In Year
+
+Output:
+---------------------
+S1 No   Pay Date         EMI Amount
+-----------------------------------
+1       Aug 21, 2016     yyyy
+2       Sep 21, 2016     yyyy
+---
+---
+24
+-----------------------------------
+             Grand Total: .....
+-----------------------------------
+Logic
+--------------------
+1)Loan Date
+2)Formula = PNR/100
+3)Using above formula, we get the interest
+  Interest = 100000*2*14/100
+4)TotalAmount = LoanAmt + Interest
+                1000000 + xyz
+5)EMI = TotalAmount/TenureInMonths
+6)Display the above data
