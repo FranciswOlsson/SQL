@@ -30,3 +30,14 @@ Logic
                 1000000 + xyz
 5)EMI = TotalAmount/TenureInMonths
 6)Display the above data
+
+create proc LoanStatement
+(
+  @LoanAmount money = 100000,
+  @ROI        tinyint = 14,
+  @TenureInYrs tinyint = 2
+)
+as begin
+--Declare a variable for Loan Date
+
+
